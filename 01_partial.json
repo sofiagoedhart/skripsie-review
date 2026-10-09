@@ -1,0 +1,988 @@
+{
+ "session_id": "20261009_094219",
+ "set_index": 1,
+ "label": "partial",
+ "target": "partial",
+ "driver": "unity",
+ "written_at": "2026-10-09 09:43:02",
+ "notes": "",
+ "calibration": {
+  "extrinsics.json": "99b25188f63f",
+  "vertical.json": "db9ef6b728de",
+  "cam0_intrinsics.json": "f27cfe928321",
+  "cam1_intrinsics.json": "143c2a047c96",
+  "cam2_intrinsics.json": "d6bb02f5e321",
+  "baselines_mm": {
+   "0-1": 2813.1,
+   "0-2": 3639.6,
+   "1-2": 2173.3
+  },
+  "up": [
+   0.027781726798470536,
+   -0.99553802578481,
+   -0.0901787939184046
+  ]
+ },
+ "baselines": {
+  "theta0_deg": 172.0964156559587,
+  "h0_mm": -216.60297895776492,
+  "standing_knee_gap_mm": 269.3962304536727,
+  "femur_mm": 411.9561606487546,
+  "gap_note": "standing knee gap 269 mm from 23 frames (fault at 244 mm)",
+  "femur_note": "femur 412 mm, fixed from calibration (depth thresholds x0.95)",
+  "reps_abandoned": 0
+ },
+ "thresholds": {
+  "depth_offset_mm": 95.55,
+  "depth_band_mm": 54.95,
+  "depth_partial_max_mm": 300.0,
+  "ref_femur_mm": 433.0,
+  "valgus_sep_drop_mm": 25.0,
+  "valgus_fault_fraction": 0.3,
+  "shoulder_even_deg": 5.0,
+  "min_knee_excursion_deg": 50.0,
+  "dominance_centre_deg": -16.25,
+  "dominance_band_deg": 3.86
+ },
+ "options": {
+  "indices": [
+   0,
+   1,
+   2
+  ],
+  "target": "parallel",
+  "calib_seconds": 2.0,
+  "tile": 640,
+  "no_video": false,
+  "clean_video": true,
+  "show_cam": [
+   1
+  ],
+  "countdown": 10.0,
+  "person_up": false,
+  "record": null,
+  "session": null,
+  "notes": "",
+  "set_dump": "results/sets",
+  "no_report": false,
+  "no_set_dump": false,
+  "no_undistort": false,
+  "timing": false,
+  "timing_file": null,
+  "set_countdown": 6.0,
+  "stance_hold": 1.0,
+  "no_stance_gate": false,
+  "drain": false,
+  "drain_mode": "formula",
+  "edge_ms": 8.0,
+  "cam_fps": 30.0,
+  "filter": "euro",
+  "euro_min_cutoff": 1.0,
+  "euro_beta": 0.02,
+  "display_min_cutoff": 0.5,
+  "display_beta": 0.002,
+  "no_display_filter": false,
+  "process_var": 12.0,
+  "measurement_var": 4.0,
+  "save_video": false,
+  "video_fps": 10.0,
+  "stream": true,
+  "unity_setup": true,
+  "host": "127.0.0.1",
+  "port": 5006,
+  "control_port": 5007,
+  "no_mirror": false,
+  "no_control": false,
+  "diagnostic": false
+ },
+ "argv": [
+  "src/live_form_feedback.py",
+  "0",
+  "1",
+  "2",
+  "--stream",
+  "--unity-setup",
+  "--clean-video",
+  "--show-cam",
+  "1"
+ ],
+ "reps_detected": 3,
+ "reps": [
+  {
+   "rep": 1,
+   "target_depth": "partial",
+   "variation": "partial",
+   "depth_met": true,
+   "depth_margin_mm": 236.1,
+   "knee_at_depth": 91.2,
+   "trunk_tibia_deg": -26.6,
+   "dominance": "knee-dominant",
+   "descent_s": 1.21,
+   "ascent_s": 0.26,
+   "bottom_dwell_s": 0.26,
+   "valgus": false,
+   "valgus_s": 0.0,
+   "valgus_frac": 0.0,
+   "t_bottom_s": 1.21,
+   "t_ascent_s": 1.48,
+   "valgus_t": null,
+   "valgus_peak": -5.123,
+   "valgus_dev_mm": -5.1,
+   "valgus_limit_mm": -25.0,
+   "knee_gap_mm": 269.4,
+   "femur_mm": 412.0,
+   "depth_scale": 0.951,
+   "depth_offset_mm": 90.9,
+   "depth_band_mm": 52.3,
+   "depth_partial_max_mm": 285.4,
+   "symmetry_deg": 2.0,
+   "shoulder_tilt_deg": -2.1,
+   "shoulder_peak_deg": 4.6,
+   "shoulder_tilt0_deg": 1.1,
+   "shoulder_referenced": true,
+   "shoulder_band": "even",
+   "shoulder_even_deg": 5.0,
+   "shoulder_level": true,
+   "depth_traj": [
+    [
+     0.12,
+     336.0
+    ],
+    [
+     0.26,
+     310.0
+    ],
+    [
+     0.39,
+     284.7
+    ],
+    [
+     0.52,
+     258.8
+    ],
+    [
+     0.65,
+     240.9
+    ],
+    [
+     0.78,
+     237.2
+    ],
+    [
+     0.92,
+     229.4
+    ],
+    [
+     1.08,
+     227.4
+    ],
+    [
+     1.21,
+     236.1
+    ],
+    [
+     1.35,
+     281.0
+    ],
+    [
+     1.48,
+     339.9
+    ]
+   ],
+   "symmetry_traj": [
+    [
+     0.12,
+     0.3
+    ],
+    [
+     0.26,
+     2.6
+    ],
+    [
+     0.39,
+     0.8
+    ],
+    [
+     0.52,
+     1.7
+    ],
+    [
+     0.65,
+     2.0
+    ],
+    [
+     0.78,
+     1.3
+    ],
+    [
+     0.92,
+     1.7
+    ],
+    [
+     1.08,
+     2.1
+    ],
+    [
+     1.21,
+     2.3
+    ],
+    [
+     1.35,
+     1.8
+    ],
+    [
+     1.48,
+     5.0
+    ]
+   ],
+   "valgus_traj": [
+    [
+     0.12,
+     11.7
+    ],
+    [
+     0.26,
+     11.4
+    ],
+    [
+     0.39,
+     8.7
+    ],
+    [
+     0.52,
+     5.1
+    ],
+    [
+     0.65,
+     8.4
+    ],
+    [
+     0.78,
+     12.9
+    ],
+    [
+     0.92,
+     13.3
+    ],
+    [
+     1.08,
+     12.7
+    ],
+    [
+     1.21,
+     10.2
+    ],
+    [
+     1.35,
+     5.9
+    ],
+    [
+     1.48,
+     10.4
+    ]
+   ],
+   "sym_signed_traj": [
+    [
+     0.12,
+     -0.3
+    ],
+    [
+     0.26,
+     2.6
+    ],
+    [
+     0.39,
+     0.8
+    ],
+    [
+     0.52,
+     1.7
+    ],
+    [
+     0.65,
+     2.0
+    ],
+    [
+     0.78,
+     1.3
+    ],
+    [
+     0.92,
+     1.7
+    ],
+    [
+     1.08,
+     2.1
+    ],
+    [
+     1.21,
+     2.3
+    ],
+    [
+     1.35,
+     1.8
+    ],
+    [
+     1.48,
+     5.0
+    ]
+   ],
+   "sym_signed_deg": 1.9,
+   "shoulder_tilt_traj": [
+    [
+     0.12,
+     -0.3
+    ],
+    [
+     0.26,
+     -2.3
+    ],
+    [
+     0.39,
+     -3.1
+    ],
+    [
+     0.52,
+     -3.6
+    ],
+    [
+     0.65,
+     -2.3
+    ],
+    [
+     0.78,
+     -0.0
+    ],
+    [
+     0.92,
+     -1.4
+    ],
+    [
+     1.08,
+     -1.3
+    ],
+    [
+     1.21,
+     -1.9
+    ],
+    [
+     1.35,
+     -2.3
+    ],
+    [
+     1.48,
+     -4.6
+    ]
+   ],
+   "faults": [],
+   "cues": [
+    "Good rep - your depth and alignment were on target."
+   ]
+  },
+  {
+   "rep": 2,
+   "target_depth": "partial",
+   "variation": "partial",
+   "depth_met": true,
+   "depth_margin_mm": 228.2,
+   "knee_at_depth": 87.9,
+   "trunk_tibia_deg": -26.2,
+   "dominance": "knee-dominant",
+   "descent_s": 1.12,
+   "ascent_s": 0.39,
+   "bottom_dwell_s": 0.4,
+   "valgus": false,
+   "valgus_s": 0.0,
+   "valgus_frac": 0.0,
+   "t_bottom_s": 1.12,
+   "t_ascent_s": 1.52,
+   "valgus_t": null,
+   "valgus_peak": 2.902,
+   "valgus_dev_mm": 2.9,
+   "valgus_limit_mm": -25.0,
+   "knee_gap_mm": 269.4,
+   "femur_mm": 412.0,
+   "depth_scale": 0.951,
+   "depth_offset_mm": 90.9,
+   "depth_band_mm": 52.3,
+   "depth_partial_max_mm": 285.4,
+   "symmetry_deg": 1.9,
+   "shoulder_tilt_deg": -2.0,
+   "shoulder_peak_deg": 3.3,
+   "shoulder_tilt0_deg": 1.1,
+   "shoulder_referenced": true,
+   "shoulder_band": "even",
+   "shoulder_even_deg": 5.0,
+   "shoulder_level": true,
+   "depth_traj": [
+    [
+     0.12,
+     347.0
+    ],
+    [
+     0.3,
+     304.6
+    ],
+    [
+     0.43,
+     269.6
+    ],
+    [
+     0.59,
+     242.9
+    ],
+    [
+     0.72,
+     231.0
+    ],
+    [
+     0.86,
+     228.2
+    ],
+    [
+     0.99,
+     226.7
+    ],
+    [
+     1.12,
+     226.1
+    ],
+    [
+     1.25,
+     225.5
+    ],
+    [
+     1.38,
+     246.3
+    ],
+    [
+     1.52,
+     286.9
+    ],
+    [
+     1.65,
+     328.3
+    ],
+    [
+     1.78,
+     373.1
+    ]
+   ],
+   "symmetry_traj": [
+    [
+     0.12,
+     0.4
+    ],
+    [
+     0.3,
+     2.8
+    ],
+    [
+     0.43,
+     1.4
+    ],
+    [
+     0.59,
+     1.4
+    ],
+    [
+     0.72,
+     2.1
+    ],
+    [
+     0.86,
+     2.8
+    ],
+    [
+     0.99,
+     2.8
+    ],
+    [
+     1.12,
+     2.6
+    ],
+    [
+     1.25,
+     2.9
+    ],
+    [
+     1.38,
+     2.1
+    ],
+    [
+     1.52,
+     1.6
+    ],
+    [
+     1.65,
+     1.0
+    ],
+    [
+     1.78,
+     1.1
+    ]
+   ],
+   "valgus_traj": [
+    [
+     0.12,
+     14.1
+    ],
+    [
+     0.3,
+     16.8
+    ],
+    [
+     0.43,
+     8.1
+    ],
+    [
+     0.59,
+     9.5
+    ],
+    [
+     0.72,
+     8.1
+    ],
+    [
+     0.86,
+     7.2
+    ],
+    [
+     0.99,
+     9.6
+    ],
+    [
+     1.12,
+     11.0
+    ],
+    [
+     1.25,
+     9.7
+    ],
+    [
+     1.38,
+     5.3
+    ],
+    [
+     1.52,
+     -2.9
+    ],
+    [
+     1.65,
+     3.1
+    ],
+    [
+     1.78,
+     0.9
+    ]
+   ],
+   "sym_signed_traj": [
+    [
+     0.12,
+     -0.4
+    ],
+    [
+     0.3,
+     2.8
+    ],
+    [
+     0.43,
+     1.4
+    ],
+    [
+     0.59,
+     1.4
+    ],
+    [
+     0.72,
+     2.1
+    ],
+    [
+     0.86,
+     2.8
+    ],
+    [
+     0.99,
+     2.8
+    ],
+    [
+     1.12,
+     2.6
+    ],
+    [
+     1.25,
+     2.9
+    ],
+    [
+     1.38,
+     2.1
+    ],
+    [
+     1.52,
+     1.6
+    ],
+    [
+     1.65,
+     1.0
+    ],
+    [
+     1.78,
+     1.1
+    ]
+   ],
+   "sym_signed_deg": 1.8,
+   "shoulder_tilt_traj": [
+    [
+     0.12,
+     -1.3
+    ],
+    [
+     0.3,
+     -3.3
+    ],
+    [
+     0.43,
+     -3.2
+    ],
+    [
+     0.59,
+     -2.0
+    ],
+    [
+     0.72,
+     -1.6
+    ],
+    [
+     0.86,
+     -1.4
+    ],
+    [
+     0.99,
+     -1.8
+    ],
+    [
+     1.12,
+     -2.0
+    ],
+    [
+     1.25,
+     -1.6
+    ],
+    [
+     1.38,
+     -2.7
+    ],
+    [
+     1.52,
+     -2.3
+    ],
+    [
+     1.65,
+     -1.0
+    ],
+    [
+     1.78,
+     -1.2
+    ]
+   ],
+   "faults": [],
+   "cues": [
+    "Good rep - your depth and alignment were on target."
+   ]
+  },
+  {
+   "rep": 3,
+   "target_depth": "partial",
+   "variation": "partial",
+   "depth_met": true,
+   "depth_margin_mm": 214.7,
+   "knee_at_depth": 87.6,
+   "trunk_tibia_deg": -26.8,
+   "dominance": "knee-dominant",
+   "descent_s": 1.23,
+   "ascent_s": 0.39,
+   "bottom_dwell_s": 0.26,
+   "valgus": false,
+   "valgus_s": 0.0,
+   "valgus_frac": 0.0,
+   "t_bottom_s": 1.23,
+   "t_ascent_s": 1.49,
+   "valgus_t": null,
+   "valgus_peak": -6.607,
+   "valgus_dev_mm": -6.6,
+   "valgus_limit_mm": -25.0,
+   "knee_gap_mm": 269.4,
+   "femur_mm": 412.0,
+   "depth_scale": 0.951,
+   "depth_offset_mm": 90.9,
+   "depth_band_mm": 52.3,
+   "depth_partial_max_mm": 285.4,
+   "symmetry_deg": 2.1,
+   "shoulder_tilt_deg": -2.7,
+   "shoulder_peak_deg": 3.7,
+   "shoulder_tilt0_deg": 1.1,
+   "shoulder_referenced": true,
+   "shoulder_band": "even",
+   "shoulder_even_deg": 5.0,
+   "shoulder_level": true,
+   "depth_traj": [
+    [
+     0.13,
+     337.7
+    ],
+    [
+     0.27,
+     303.0
+    ],
+    [
+     0.4,
+     263.0
+    ],
+    [
+     0.54,
+     235.9
+    ],
+    [
+     0.66,
+     224.0
+    ],
+    [
+     0.81,
+     213.2
+    ],
+    [
+     0.96,
+     210.7
+    ],
+    [
+     1.09,
+     210.7
+    ],
+    [
+     1.23,
+     216.3
+    ],
+    [
+     1.36,
+     245.1
+    ],
+    [
+     1.49,
+     292.8
+    ],
+    [
+     1.62,
+     348.3
+    ]
+   ],
+   "symmetry_traj": [
+    [
+     0.13,
+     0.1
+    ],
+    [
+     0.27,
+     2.5
+    ],
+    [
+     0.4,
+     1.3
+    ],
+    [
+     0.54,
+     0.4
+    ],
+    [
+     0.66,
+     3.1
+    ],
+    [
+     0.81,
+     4.1
+    ],
+    [
+     0.96,
+     3.8
+    ],
+    [
+     1.09,
+     3.6
+    ],
+    [
+     1.23,
+     2.5
+    ],
+    [
+     1.36,
+     1.2
+    ],
+    [
+     1.49,
+     2.2
+    ],
+    [
+     1.62,
+     1.0
+    ]
+   ],
+   "valgus_traj": [
+    [
+     0.13,
+     17.3
+    ],
+    [
+     0.27,
+     18.8
+    ],
+    [
+     0.4,
+     10.6
+    ],
+    [
+     0.54,
+     16.2
+    ],
+    [
+     0.66,
+     16.7
+    ],
+    [
+     0.81,
+     18.6
+    ],
+    [
+     0.96,
+     20.8
+    ],
+    [
+     1.09,
+     17.8
+    ],
+    [
+     1.23,
+     15.3
+    ],
+    [
+     1.36,
+     11.1
+    ],
+    [
+     1.49,
+     7.5
+    ],
+    [
+     1.62,
+     6.6
+    ]
+   ],
+   "sym_signed_traj": [
+    [
+     0.13,
+     0.1
+    ],
+    [
+     0.27,
+     2.5
+    ],
+    [
+     0.4,
+     1.3
+    ],
+    [
+     0.54,
+     0.4
+    ],
+    [
+     0.66,
+     3.1
+    ],
+    [
+     0.81,
+     4.1
+    ],
+    [
+     0.96,
+     3.8
+    ],
+    [
+     1.09,
+     3.6
+    ],
+    [
+     1.23,
+     2.5
+    ],
+    [
+     1.36,
+     1.2
+    ],
+    [
+     1.49,
+     2.2
+    ],
+    [
+     1.62,
+     1.0
+    ]
+   ],
+   "sym_signed_deg": 2.1,
+   "shoulder_tilt_traj": [
+    [
+     0.13,
+     -2.3
+    ],
+    [
+     0.27,
+     -3.6
+    ],
+    [
+     0.4,
+     -3.7
+    ],
+    [
+     0.54,
+     -2.5
+    ],
+    [
+     0.66,
+     -2.7
+    ],
+    [
+     0.81,
+     -3.7
+    ],
+    [
+     0.96,
+     -3.3
+    ],
+    [
+     1.09,
+     -2.7
+    ],
+    [
+     1.23,
+     -1.8
+    ],
+    [
+     1.36,
+     -3.0
+    ],
+    [
+     1.49,
+     -2.7
+    ],
+    [
+     1.62,
+     -0.2
+    ]
+   ],
+   "faults": [],
+   "cues": [
+    "Good rep - your depth and alignment were on target."
+   ]
+  }
+ ],
+ "source_file": "20261009_094219/01_partial.json",
+ "source_session_id": "20261009_094219",
+ "source_set_index": 1
+}
